@@ -9,11 +9,11 @@ public class FindMaxNumberTest2 {
 	public void findMaxNumber() {
 		Scanner sc = new Scanner(System.in);
 		boolean result;
-		Integer[] i1 = new Integer[3];
+		Float[] i1 = new Float[3];
 		for (int i = 0; i < i1.length; i++) {
-			i1[i] = sc.nextInt();
+			i1[i] = sc.nextFloat();
 		}
-		int max = FindMaxNumber.maxNumber(i1);
+		float max = FindMaxNumber.maxNumber(i1);
 		if (max == i1[1])
 			result = true;
 		else
