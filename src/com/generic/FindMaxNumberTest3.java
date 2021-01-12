@@ -9,12 +9,13 @@ public class FindMaxNumberTest3 {
 	public void findMaxNumber() {
 		Scanner sc = new Scanner(System.in);
 		boolean result;
-		Float[] i1 = new Float[3];
-		for (int i = 0; i < i1.length; i++) {
-			i1[i] = sc.nextFloat();
+		String[] name = new String[3];
+		for (int i = 0; i < name.length; i++) {
+			String insertName = sc.nextLine();
+			name[i] = insertName.toUpperCase();
 		}
-		float max = FindMaxNumber.maxNumber(i1);
-		if (max == i1[2])
+		String max = FindMaxNumber.maxNumber(name);
+		if (max == name[2])
 			result = true;
 		else
 			result = false;

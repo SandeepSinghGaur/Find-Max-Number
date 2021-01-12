@@ -1,7 +1,7 @@
 package com.generic;
 
 public class FindMaxNumber {
-	public static<E extends Comparable<E>>float maxNumber(E[] number)
+	public static<E extends Comparable<E>>String maxNumber(E[] number)
 	{
 	  E max=number[0];
 		for(E num:number)
@@ -10,7 +10,7 @@ public class FindMaxNumber {
 				max=num;
 		}
 		System.out.println(max);
-		return (float)max;
+		return (String)max;
 	}
 
 }
